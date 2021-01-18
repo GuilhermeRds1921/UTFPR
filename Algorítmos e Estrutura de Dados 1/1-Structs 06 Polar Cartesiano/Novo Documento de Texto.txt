@@ -1,0 +1,20 @@
+Faça uma função que converta coordenadas polares para cartesianas. 
+O programa principal deve apenas ler e imprimir, a conversão deve ser realizada 
+por uma função sabendo que x = r*cos(a) e y = r*sin(a).
+
+O problema deve utilizar a struct a seguir:
+
+struct ponto{
+    float x;
+    float y;
+    float r;
+    float a;
+};
+Input Format
+
+A entrada contem um ponto em coordenada polar, composto por raio (r) e argumento (a) 
+em radianos.
+
+Output Format
+
+Imprima o ponto lido em coordenada cartesiana, composto por x e y.

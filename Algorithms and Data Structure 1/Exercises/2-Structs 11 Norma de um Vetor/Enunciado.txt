@@ -1,0 +1,22 @@
+Considerando uma estrutura para representar um vetor no R2, implemente um programa que calcule norma (ou módulo) do mesmo. Use o protótipo de função abaixo
+
+struct vetor_t{
+    float x;
+    float y;
+    float norm;
+};
+
+vetor_t calculaNorma(vetor_t vetor){
+    
+}
+
+int main(){
+  
+}
+Input Format
+
+A primeira linha da entrada contém um único número indicando quantos pontos serão lidos. Seguem os valores de x e y.
+
+Output Format
+
+A saída deve apresentar o valor da norma com precisão de 1 casa decimal

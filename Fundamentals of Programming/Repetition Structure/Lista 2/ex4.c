@@ -1,14 +1,20 @@
 #include <stdio.h>
 int main(void)
 {
-    int i, num1, cont=0;
+    int i, num1, cont=0, linha=0;
     float media;
 
     for(i=500; i>=0; i--)
     {
         if(i%2!=0 && i%7==0)
         {
-            printf("\t%d", i);
+            printf("%d\t", i);
+            linha++;
+            if(linha > 4){
+                printf("\n");
+                linha = 0;
+            }
+
         }
         if(i%2==0 && i%3==0)
         {

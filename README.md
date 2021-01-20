@@ -1,7 +1,8 @@
-# UTFPR
-For now I am in the second semester and had the subjects of Algorithms and Data Structure 1, Fundamentals of Programming:
+# UTFPR - Universidade Tecnológica Federal do Paraná.
+### For now I am in the second semester and had the subjects of Algorithms and Data Structure 1, Fundamentals of Programming:
+*We use the C programming language.*
 
-1. **Fundamentals of Programming in C:**
+1. **Fundamentals of Programming:**
    1. Variables and Strings.
    1. Decision Making Structure.
    1. Repetition Structure.

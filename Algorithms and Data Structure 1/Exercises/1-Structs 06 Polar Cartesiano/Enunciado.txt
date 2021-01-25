@@ -12,7 +12,8 @@ struct ponto{
 };
 Input Format
 
-A entrada contem um ponto em coordenada polar, composto por raio (r) e argumento (a) 
+A entrada contem um ponto em coordenada polar, composto por raio (r) e 
+argumento (a) 
 em radianos.
 
 Output Format

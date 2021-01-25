@@ -1,11 +1,19 @@
-Faça um programa que controla o consumo de energia dos eletrodomésticos de uma casa. Primeiro leia os N eletrodomésticos que contendo nome (máximo 15 letras), potência (real, em kW) e tempo ativo por dia (real, em horas).
+Faça um programa que controla o consumo de energia dos eletrodomésticos 
+de uma casa. Primeiro leia os N eletrodomésticos que contendo 
+nome (máximo 15 letras), potência (real, em kW) e tempo ativo por 
+dia (real, em horas).
 
-Leia um tempo t (em dias), calcule e mostre o consumo total na casa e o consumo relativo de cada eletrodoméstico (consumo/consumo total) nesse período de tempo. Apresente este último dado em porcentagem.
+Leia um tempo t (em dias), calcule e mostre o consumo total na casa e o 
+consumo relativo de cada eletrodoméstico (consumo/consumo total) nesse 
+período de tempo. Apresente este último dado em porcentagem.
 
 Input Format
 
-A entrada inicia informando o número de eletrodomésticos (N). Segue-se N linhas com as informações de cada um (nome, potencia e tempo). Na ultima linha é informado o número de dias (t)
+A entrada inicia informando o número de eletrodomésticos (N). 
+Segue-se N linhas com as informações de cada um (nome, potencia e tempo). 
+Na ultima linha é informado o número de dias (t)
 
 Output Format
 
-A primeira linha deve exibir o consumo total na casa seguido N linhas com o consumo relativo de cada eletrodoméstico.
+A primeira linha deve exibir o consumo total na casa seguido N linhas 
+com o consumo relativo de cada eletrodoméstico.

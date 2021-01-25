@@ -19,7 +19,7 @@ int main(){
     int num, i;
     scanf("%d", &num);
 
-    for(i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         scanf("%f %f", &vetor.x, &vetor.y);
         print = calculaNorma(vetor);
         printf("Norma = %.1f\n", sqrt(print.norm));

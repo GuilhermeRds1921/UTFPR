@@ -16,6 +16,6 @@ int main() {
     printf("%.1f\n", pontoz.y);
 }
 void func(void){
-    pontoz.x = pontoz.r*cos(pontoz.a);
-    pontoz.y = pontoz.r*sin(pontoz.a);
+    pontoz.x = pontoz.r * cos(pontoz.a);
+    pontoz.y = pontoz.r * sin(pontoz.a);
 }

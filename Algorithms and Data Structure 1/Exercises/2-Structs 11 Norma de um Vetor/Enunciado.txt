@@ -1,4 +1,6 @@
-Considerando uma estrutura para representar um vetor no R2, implemente um programa que calcule norma (ou módulo) do mesmo. Use o protótipo de função abaixo
+Considerando uma estrutura para representar um vetor no R2, 
+implemente um programa que calcule norma (ou módulo) do mesmo. 
+Use o protótipo de função abaixo
 
 struct vetor_t{
     float x;
@@ -15,7 +17,8 @@ int main(){
 }
 Input Format
 
-A primeira linha da entrada contém um único número indicando quantos pontos serão lidos. Seguem os valores de x e y.
+A primeira linha da entrada contém um único número indicando quantos 
+pontos serão lidos. Seguem os valores de x e y.
 
 Output Format
 

@@ -9,9 +9,9 @@ void troca (int *A, int *B){
     *B = aux;
 }
 int main() {
-    int num, a, b;
+    int num, a, b, i;
     scanf("%d", &num);
-    for(int i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         scanf("%d", &a);
         scanf("%d", &b);
         troca(&a, &b);

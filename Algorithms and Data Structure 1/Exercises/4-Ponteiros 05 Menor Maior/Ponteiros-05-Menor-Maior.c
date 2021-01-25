@@ -5,7 +5,7 @@
 
 void troca (int *A, int *B){
     int aux;
-    if(*A <*B){
+    if(*A < *B){
         aux = *B;
         *B = *A;
         *A = aux;
@@ -16,7 +16,7 @@ int main(void){
     int num, i, a, b;
     scanf("%d", &num);
 
-    for(i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         scanf("%d", &a);
         scanf("%d", &b);
         troca(&a, &b);

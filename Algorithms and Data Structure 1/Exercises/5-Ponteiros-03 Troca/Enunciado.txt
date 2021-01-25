@@ -1,12 +1,19 @@
-Faça um programa que leia 2 valores inteiros e chame uma função que receba estas 2 variáveis e troque o seu conteúdo, ou seja, esta função é chamada passando duas variáveis A e B por exemplo e, após a execução da função, A conterá o valor de B e B terá o valor de A. Imprima esses valores na função main.
+Faça um programa que leia 2 valores inteiros e chame uma função 
+que receba estas 2 variáveis e troque o seu conteúdo, ou seja, 
+esta função é chamada passando duas variáveis A e B por exemplo e, 
+após a execução da função, A conterá o valor de B e B terá o valor de A. 
+Imprima esses valores na função main.
 
 Use o seguinte protótipo de função
 
 void troca (int *A, int *B);
 Input Format
 
-A primeira linha da entrada contém um único inteiro N, indicando o número de casos de teste. Cada caso de teste contém um inteiro X (-100 ≤ X ≤ 100).
+A primeira linha da entrada contém um único inteiro N, indicando 
+o número de casos de teste. Cada caso de teste contém um inteiro 
+X (-100 ≤ X ≤ 100).
 
 Output Format
 
-Para cada caso de teste de entrada deverá ser apresentada uma linha de saída, no seguinte formato: A=X B=Y
+Para cada caso de teste de entrada deverá ser apresentada uma linha de saída, 
+no seguinte formato: A=X B=Y

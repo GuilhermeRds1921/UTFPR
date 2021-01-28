@@ -1,0 +1,11 @@
+Dadas duas listas L1 e L2, sem elementos repetidos, impemente a operação INTER, que cria uma terceira lista L3 com a intercalação entre as duas listas, também sem elementos repetidos.
+
+Utilize um TAD do tipo Lista (pode ser utilizado o que foi apresentado em aula) para todos os processos. Ou seja, toda alteração nos dados (inserção, remoção, etc..) deve ser realizada através de uma função. Alterações nos dados fora de funções serão desconsideradas na correção e descontado pontos.
+
+Input Format
+
+A primeira linha contém o número de casos de teste. Em seguida, cada duas linhas são referentes a um par de listas que serão intercaladas. Observação: "-1" não é inserido na lista, este número serve apenas para finalizar a leitura e inserção de elementos na lista.
+
+Output Format
+
+A lista L3 intercalada sem elementos repetidos

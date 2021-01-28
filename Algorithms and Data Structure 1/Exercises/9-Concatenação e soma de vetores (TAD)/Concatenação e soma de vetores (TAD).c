@@ -15,7 +15,7 @@ Vetor * iniciar(int n){
     return vet;
 }
 int inserir(Vetor *v, int x){
-    for(int i=0; i<x; i++){
+    for(int i = 0; i < x; i++){
         scanf("%d", &v->v[i]);
         v->q++;
     }
@@ -32,12 +32,12 @@ Vetor * concatenar(Vetor *v1, Vetor *v2){
     Vetor *conc = (Vetor *) malloc(sizeof(Vetor));
     conc->v = (int *) malloc(tam * sizeof(int));
 
-    for(int i=0; i<v1->q; i++){
+    for(int i = 0; i < v1->q; i++){
         conc->v[i] = v1->v[i];
         printf("%d ", conc->v[i]);
     }
 
-    for(int i=v1->q; i<tam; i++){
+    for(int i = v1->q; i < tam; i++){
         conc->v[i] = v2->v[i-(v1->q)];
         printf("%d ",conc->v[i]);
     }
@@ -52,11 +52,11 @@ Vetor * soma(Vetor *v1, Vetor *v2){
         p = v2->q;
         v3 = iniciar(v1->q);
 
-    for( i=0; i<p; i++){
+    for( i = 0; i < p; i++){
         v3->v[i] = v1->v[i] + v2->v[i];
         printf("%d ",v3->v[i]);
     }
-    for(i=p; i<v1->q; i++){
+    for(i = p; i < v1->q; i++){
            v3->v[i] = v1->v[i];
             printf("%d ",v3->v[i]);
     }
@@ -64,16 +64,15 @@ Vetor * soma(Vetor *v1, Vetor *v2){
     else{
         p = v1->q;
         v3 = iniciar(v2->q);
-        for(i=0; i<p; i++){
+        for(i = 0; i < p; i++){
             v3->v[i] = v1->v[i] + v2->v[i];
             printf("%d ",v3->v[i]);
         }
-        for(i=p; i<v2->q; i++){
+        for(i = p; i < v2->q; i++){
            v3->v[i] = v2->v[i];
             printf("%d ",v3->v[i]);
     }
     }
-
     return v1;
 }
 
@@ -90,8 +89,8 @@ int main()
 
     scanf("%d", &vetor.n);
     v2 = iniciar(vetor.n);
-    a+= inserir(v2, vetor.n);
-    if(a==0){
+    a += inserir(v2, vetor.n);
+    if(a == 0){
         printf("0\n0");
     }
     concatenar(v1, v2);

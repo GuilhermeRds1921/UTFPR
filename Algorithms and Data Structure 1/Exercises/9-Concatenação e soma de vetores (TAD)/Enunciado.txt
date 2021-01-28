@@ -1,4 +1,5 @@
-Crie um TAD para processamento de vetores com a seguinte estrutura e operações, onde v é o vetor e n é a quantidade de elementos contidos no vetor:
+Crie um TAD para processamento de vetores com a seguinte estrutura e  
+operações, onde v é o vetor e n é a quantidade de elementos contidos no vetor:
 
 typedef struct{
     int *v; // Array (vetor) de tamanho n
@@ -8,21 +9,24 @@ typedef struct{
 
 Vetor * iniciar(int n);
 
-int inserir(Vetor *v, int x); // retorna 1 se a operação foi bem-sucedida
+int inserir(Vetor *v, int x); // retorna 1 se a operação foi bem-sucedida.
 
 Vetor * concatenar(Vetor *v1, Vetor *v2);
 
 Vetor * soma(Vetor *v1, Vetor *v2);
-Observação: não é necessário considerar o arquivo .h, já que no HackerRank não tem como "upar" arquivos .h e .c.
+Observação: não é necessário considerar o arquivo .h, 
+já que no HackerRank não tem como "upar" arquivos .h e .c.
 
-Input Format
+Input Format:
 
-Deve ser lido um valor inteiro n que representa a quantidade de elementos de um v. Em seguida, devem ser lidos os n elementos do vetor. Repetir o processo para o segundo vetor.
+Deve ser lido um valor inteiro n que representa a quantidade 
+de elementos de um v. Em seguida, devem ser lidos os n elementos do vetor.
+Repetir o processo para o segundo vetor.
 
-Constraints
+Constraints:
 
-Não há
+Não há.
 
-Output Format
+Output Format:
 
-Vetores na seguinte ordem: resultantes da concatenação resultantes da soma
+Vetores na seguinte ordem: resultantes da concatenação resultantes da soma.

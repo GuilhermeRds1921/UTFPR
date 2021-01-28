@@ -1,9 +1,15 @@
-Faça um programa que leia o tamanho de um vetor a ser lido e faça a alocação dinâmica de memória. Em seguida, leia seus valores. Após lidos os valores iniciais uma nova sequencia de numeros devera ser lida e guardada no mesmo vetor (utilize realloc). O programa deverá retornar um novo vetor (também alocado dinâmicamente) invertido.
+Faça um programa que leia o tamanho de um vetor a ser lido e faça a alocação
+dinâmica de memória. Em seguida, leia seus valores. Após lidos os valores 
+iniciais uma nova sequencia de numeros devera ser lida e guardada no mesmo 
+vetor (utilize realloc). O programa deverá retornar um novo 
+vetor (também alocado dinâmicamente) invertido.
 
-Input Format
+Input Format:
 
-A entrada é dada por um numero N, seguido por N valores. Em sequencia mais um número M será dado, seguido por M valores
+A entrada é dada por um numero N, seguido por N valores. 
+Em sequencia mais um número M será dado, seguido por M valores.
 
-Output Format
+Output Format:
 
-A saída deve conter o vetor invertido, ou seja, o primeiro valor lido será o último e o último será o primeiro
+A saída deve conter o vetor invertido, ou seja, o primeiro valor lido 
+será o último e o último será o primeiro.

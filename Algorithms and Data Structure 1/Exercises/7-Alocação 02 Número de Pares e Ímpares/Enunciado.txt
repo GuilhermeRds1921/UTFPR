@@ -1,9 +1,12 @@
-Faça um programa que leia o tamanho de um vetor a ser lido e faça a alocação dinâmica de memória. Em seguida, leia seus valores e mostre quantos dos números são pares e quantos são ímpares.
+Faça um programa que leia o tamanho de um vetor a ser lido e faça a 
+alocação dinâmica de memória. Em seguida, leia seus valores e mostre 
+quantos dos números são pares e quantos são ímpares.
 
-Input Format
+Input Format:
 
 A entrada é dada por um numero N, seguido por N valores
 
-Output Format
+Output Format:
 
-A saída deve conter a quantidade de números pares e quantidade de números ímpares
+A saída deve conter a quantidade de números pares e quantidade de 
+números ímpares.

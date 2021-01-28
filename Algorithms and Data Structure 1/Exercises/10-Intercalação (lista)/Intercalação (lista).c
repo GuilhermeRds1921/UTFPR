@@ -42,20 +42,20 @@ int inserir(Lista* li, struct num vetor){
 }
 
 int buscar(Lista *li, int key, int k, int count){
-    int i=0, j=0;
+    int i = 0, j = 0;
         do{
-            if(li->dados[k].itens[j]==key){
+            if(li->dados[k].itens[j] == key){
                 i++;
             }
             j++;
-        }while(j<count);
-    if(i==0){
+        }while(j < count);
+    if(i == 0){
         return 1;
     }
     return 0;
 }
 Lista* intercalar(Lista* l1, Lista* l2, int k){
-    int j=0, p=0, count=1;
+    int j = 0, p = 0, count = 1;
     Lista *l3 = criar();
 
    do{
@@ -82,19 +82,19 @@ Lista* intercalar(Lista* l1, Lista* l2, int k){
 
         j=0;
         do{
-            if(l3->dados[k].itens[j]==-1){
+            if(l3->dados[k].itens[j] == -1){
                 break;
             }
             printf("%d ", l3->dados[k].itens[j]);
             j++;
-        }while(j<p);
+        }while(j < p);
 
 
     printf("\n");
     return l3;
 }
 int main() {
-    int casos, i=0, j;
+    int casos, i = 0, j;
     Lista *l1, *l2, *l3;
     l1 = criar();
     l2 = criar();
@@ -102,13 +102,13 @@ int main() {
     struct num vetor1, vetor2;
     scanf("%d", &casos);
 
-    for(j=0; j<casos; j++){
-        i=0;
+    for(j = 0; j < casos; j++){
+        i = 0;
         do{
             scanf("%d", &vetor1.itens[i]);
             i++;
         }while(vetor1.itens[i-1] != -1);
-        i=0;
+        i = 0;
         do{
             scanf("%d", &vetor2.itens[i]);
             i++;
@@ -118,6 +118,5 @@ int main() {
         inserir(l2, vetor2);
         l3 = intercalar(l1, l2, j);
     }
-
     return 0;
 }

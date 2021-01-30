@@ -42,11 +42,11 @@ int inserir_final(Lista* li, struct nome al){
 
 }
 int consulta_qualquer(Lista* li, char* po, struct nome *consultar){
-    int i=0;
-    if(li==NULL){
+    int i = 0;
+    if(li == NULL){
         return -1;
     }
-    for(i=0; i<li->qtd; i++){
+    for(i = 0; i < li->qtd; i++){
 
         if(strstr(li->dados[i].nomex, po)){
             *consultar = li->dados[i];
@@ -54,7 +54,7 @@ int consulta_qualquer(Lista* li, char* po, struct nome *consultar){
 
         }
     }
-    if(i==li->qtd){
+    if(i == li->qtd){
         return 0;
     }
 
@@ -75,7 +75,7 @@ int main() {
 
     struct nome receber, *consultar;
 
-    for(i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         scanf("%s", &receber.nomex);
         inserir_final(li, receber);
 

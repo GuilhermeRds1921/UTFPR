@@ -1,10 +1,15 @@
-Dada uma função que receba uma lista de contatos e uma string. Essa função deverá imprimir os contatos que contêm essa string no nome. Por exemplo, para a string "son", podem ser encontrados nomes como: Son**ia, Ander**son, Jeffer**son**.
+Dada uma função que receba uma lista de contatos e uma string. 
+Essa função deverá imprimir os contatos que contêm essa string no nome. 
+Por exemplo, para a string "son", podem ser encontrados nomes como: 
+Son**ia, Ander**son, Jeffer**son**.
 
-Input Format
+Input Format:
 
-A primeira linha a ser lida deve ser a string que deve ser procurada. Em seguida, deve ser lida um número inteiro referente à quantidade de nomes que devem ser incluídos na lista.
+A primeira linha a ser lida deve ser a string que deve ser procurada. 
+]Em seguida, deve ser lida um número inteiro referente à quantidade 
+de nomes que devem ser incluídos na lista.
 
-Constraints
+Constraints:
 
 .
 

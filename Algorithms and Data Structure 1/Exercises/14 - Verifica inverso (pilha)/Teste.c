@@ -25,7 +25,7 @@ Pilha* criar(){
     return pi;
 }
 int empilhar(Pilha* pi, struct palavra pa){
-    if(pi ==NULL || pi->qtd == Max){
+    if(pi == NULL || pi->qtd == Max){
         return 0;
     }
     pi->dados[pi->qtd] = pa;
@@ -33,29 +33,29 @@ int empilhar(Pilha* pi, struct palavra pa){
     return 1;
 }
 Pilha* desempilhar(Pilha* pi){
-    if(pi == NULL || pi->qtd==0){
+    if(pi == NULL || pi->qtd == 0){
         return 0;
     }
     Pilha* piINV = (Pilha*)malloc(sizeof(Pilha));
     do{
         empilhar(piINV, pi->dados[pi->qtd-1]);
         pi->qtd--;
-    }while(pi->qtd-1>=0);
+    }while(pi->qtd-1 >= 0);
     return piINV;
 }
 void liberar(Pilha* pi){
     free(pi);
 }
 int conferir(Pilha* piINV, Pilha* pi2){
-    int i=0, p=0;
+    int i = 0, p = 0;
     do{
         if(piINV->dados[i].word != pi2->dados[i].word){
             p++;
         }
 
         i++;
-    }while(i<piINV->qtd);
-   if(p==0){
+    }while(i < piINV->qtd);
+   if(p == 0){
        printf("E inverso\n");
    }
     else{
@@ -64,7 +64,7 @@ int conferir(Pilha* piINV, Pilha* pi2){
     return 1;
 }
 int main() {
-    int casos, j=0;
+    int casos, j = 0;
     scanf("%d\n", &casos);
     Pilha* pi;
     Pilha* pi2;
@@ -73,16 +73,16 @@ int main() {
    do{
         pi = criar();
         pi2 = criar();
-        piINV= criar();
+        piINV = criar();
        do{
             scanf("%c", &pa.word);
-           if(pa.word!=' '){
+           if(pa.word != ' '){
                empilhar(pi, pa);
            }
-       }while(pa.word!=' ');
+       }while(pa.word != ' ');
        do{
             scanf("%c", &p2.word);
-           if(p2.word!='\n'){
+           if(p2.word != '\n'){
               empilhar(pi2, p2);
            }
 
@@ -95,6 +95,6 @@ int main() {
         liberar(pi2);
        liberar(piINV);
         j++;
-    }while(j<casos);
+    }while(j < casos);
     return 0;
 }

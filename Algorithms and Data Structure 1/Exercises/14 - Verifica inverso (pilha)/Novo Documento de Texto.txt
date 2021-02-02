@@ -1,8 +1,12 @@
-Escreva uma função para determinar se uma cadeia de caracteres (string) é inverso de uma segunda cadeia de caracteres. Isto é, se x = “ABABBA”, y deve equivaler a “ABBABA”. A resolução desse problema deve, obrigatóriamente, utilizar as funções de um TAD pilha de caracteres.
+Escreva uma função para determinar se uma cadeia de caracteres (string) 
+é inverso de uma segunda cadeia de caracteres. Isto é, se x = “ABABBA”, 
+y deve equivaler a “ABBABA”. A resolução desse problema deve, obrigatóriamente, 
+utilizar as funções de um TAD pilha de caracteres.
 
 Input Format
 
-A primeira linha apresenta um inteiro N, denotando o número de casos de teste. Segue-se N linhas com 2 strings cada
+A primeira linha apresenta um inteiro N, denotando o número de casos de teste.
+ Segue-se N linhas com 2 strings cada
 
 Output Format
 

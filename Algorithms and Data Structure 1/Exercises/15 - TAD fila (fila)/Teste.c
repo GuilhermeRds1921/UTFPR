@@ -42,7 +42,7 @@ int retirar(Fila* fi){
     if(fi->qtd == 0){
         return -1;
     }
-    for(i=0; i<fi->qtd; i++){
+    for(i = 0; i < fi->qtd; i++){
         fi->dados[i] = fi->dados[i+1];
     }
     fi->qtd--;
@@ -53,7 +53,7 @@ int contar(Fila* fi){
     return fi->qtd;
 }
 int vazia(Fila* fi){
-    if(fi->qtd ==0){
+    if(fi->qtd == 0){
         printf("Fila Vazia!\n");
         return 0;
     }
@@ -77,11 +77,11 @@ int estado(Fila* fi){
         printf("Fila vazia\n");
         return 0;
     }
-    if(fi->qtd ==Max-1){
+    if(fi->qtd == Max-1){
         printf("Fila cheia\n");
         return 0;
     }
-    for(i=0; i<fi->qtd; i++){
+    for(i = 0; i < fi->qtd; i++){
         printf("%d ", fi->dados[i]);
     }
     printf("\n");
@@ -97,7 +97,7 @@ int main() {
     Fila *fi;
 
     struct comandos X;
-    for(i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         fi = criar();
         do{
 
@@ -127,7 +127,7 @@ int main() {
             }
 
         }while(opcao!='X');
-        if(i!=num-1){
+        if(i != num - 1){
             printf("\n");
         }
         liberar(fi);

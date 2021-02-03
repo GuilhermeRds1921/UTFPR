@@ -1,0 +1,20 @@
+Javanildo pretende controlar uma fila da melhor forma possível. Para isso ele deve desenvolver várias funções que são:
+
+Inserir na fila (I)
+Remover da fila (R)
+Contar quantos elementos há na fila (K)
+Verificar se a fila está vazia (V)
+Verificar se a fila está cheia (C)
+Imprimir estado atual da fila (P)
+Com as funções acima uma sequencia de comandos será dada e sua saída deve ser mostrada na tela. A fila tem tamanho máximo de 5 elementos.
+
+Observação: não é necessário considerar o arquivo .h, já que no HackerRank não tem como "upar" arquivos .h e .c.
+
+Input Format
+
+Deve ser lido um valor inteiro N que representa a quantidade de casos de teste. Cada linha a seguir é um caso de teste que contém até 1000 comandos. Cada comando é composto por uma função e sua respectiva entrada, se houver. Uma sequencia de comandos termina com o caracter X
+
+Output Format
+
+Você deve imprimir a saída dos comandos K V C P quando dados
+

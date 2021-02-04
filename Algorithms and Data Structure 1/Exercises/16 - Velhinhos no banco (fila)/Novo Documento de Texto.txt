@@ -1,19 +1,33 @@
-Ficar vários minutos e até horas numa fila de banco é sina que muitos brasileiros precisam enfrentar pelo menos uma vez por mês. Por mais que a tecnologia tenha reduzido esse problema, muita gente ainda não usa o computador e possuem grande dificuldade em utilizar os caixas eletrônicos.
+Ficar vários minutos e até horas numa fila de banco é sina que muitos 
+brasileiros precisam enfrentar pelo menos uma vez por mês. Por mais que a 
+tecnologia tenha reduzido esse problema, muita gente ainda não usa o 
+computador e possuem grande dificuldade em utilizar os caixas eletrônicos.
 
-Pensando nessa dificuldade nossos queridos deputados e senadores (sqn!!!) criaram uma lei que determina que idosos e gestantes tem atendimento prioritário, em fila separada.
+Pensando nessa dificuldade nossos queridos deputados e senadores (sqn!!!) 
+criaram uma lei que determina que idosos e gestantes tem atendimento 
+prioritário, em fila separada.
 
-Ou seja, sobrou para vc, nobre programador, a tarefa de criar um sistema que contemple o atendimento prioritário de um banco.
+Ou seja, sobrou para vc, nobre programador, a tarefa de criar um sistema que
+contemple o atendimento prioritário de um banco.
 
-Sua(s) fila(s) deve, obrigatóriamente, receber no máximo 5 pessoas. Em casos onde uma 6 pessoa chegar em uma das filas (normal ou prioritária) ela desestirá de ser atendida e simplesmente irá embora.
+Sua(s) fila(s) deve, obrigatóriamente, receber no máximo 5 pessoas. 
+Em casos onde uma 6 pessoa chegar em uma das filas (normal ou prioritária) 
+ela desestirá de ser atendida e simplesmente irá embora.
 
-Input Format
+Input Format:
 
-Em cada linha mostra-se a chegada de N pessoas identificadas como atendimento normal (N), idoso(I) ou gestante (G) seguido de um número inteiro.
+Em cada linha mostra-se a chegada de N pessoas identificadas como atendimento 
+normal (N), idoso(I) ou gestante (G) seguido de um número inteiro.
 
 A chegada de pessoas termina com uma letra (F).
 
-Intercalado com as pessoas chegando para atendimento ao banco haverá chamadas (C). A cada chamada dada deve-se dar preferência de atendimento às pessoas que estão na fila prioritária, se existerem. Apenas se a fila prioritária não tiver ninguem uma pessoa da fila normal será chamada
+Intercalado com as pessoas chegando para atendimento ao banco haverá 
+chamadas (C). A cada chamada dada deve-se dar preferência de atendimento 
+às pessoas que estão na fila prioritária, se existerem. 
+Apenas se a fila prioritária não tiver ninguem uma pessoa da fila 
+normal será chamada.
 
-Output Format
+Output Format:
 
-A saída mostrará a ordem de atendimento realizada e a quantidade de pessoas na fila após fim de atendimento...
+A saída mostrará a ordem de atendimento realizada e a quantidade de
+pessoas na fila após fim de atendimento...

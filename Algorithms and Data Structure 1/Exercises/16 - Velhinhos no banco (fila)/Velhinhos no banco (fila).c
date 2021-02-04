@@ -41,7 +41,7 @@ int retirar(Fila* fi, Fila* ret){
         return -1;
     }
     inserir(ret, fi->dados[0]);
-    for(i=0; i<fi->qtd; i++){
+    for(i = 0; i < fi->qtd; i++){
         fi->dados[i] = fi->dados[i+1];
     }
     fi->qtd--;
@@ -49,7 +49,7 @@ int retirar(Fila* fi, Fila* ret){
 }
 void mostrar(Fila* ret, Fila* fi, Fila* pref){
     int i;
-    for(i=0; i<ret->qtd; i++){
+    for(i = 0; i < ret->qtd; i++){
         printf("%d ", ret->dados[i].com);
     }
     printf("\nRestaram %d pessoas na fila", fi->qtd + pref->qtd);
@@ -62,33 +62,33 @@ int main() {
     struct comandos X;
         fi = criar();
         pref = criar();
-        ret =criar();
+        ret = criar();
     do{
         scanf("%c", &opcao);
             switch(opcao){
                 case 'N':
-                    if(fi->qtd >4){
+                    if(fi->qtd > 4){
                         break;
                     }
                     scanf("%d", &X.com);
                     inserir(fi, X);
                     break;
                 case 'I':
-                    if(pref->qtd >4){
+                    if(pref->qtd > 4){
                         break;
                     }
                     scanf("%d", &X.com);
                     inserir(pref, X);
                     break;
                 case 'G':
-                    if(pref->qtd >4){
+                    if(pref->qtd > 4){
                         break;
                     }
                     scanf("%d", &X.com);
                     inserir(pref, X);
                     break;
                 case 'C':
-                    if(pref->qtd==0){
+                    if(pref->qtd == 0){
                         retirar(fi, ret);
                     }
                     retirar(pref, ret);
@@ -96,12 +96,10 @@ int main() {
                 default:
                     break;
             }
-            }while(opcao!='F');
+            }while(opcao != 'F');
         mostrar(ret, fi, pref);
         liberar(fi);
         liberar(pref);
         liberar(ret);
     return 0;
 }
-
-

@@ -1,0 +1,13 @@
+mplemente uma função que receba duas filas compostas por números naturais, cujos elementos estejam ordenados de forma crescente. A função deverá concatenar as duas filas, onde a fila resultante deverá conter os seus elementos ordenados de forma crescente.
+
+Input Format
+
+Na primeira linha, enquanto "-1" não for lido, ler números inteiros. Na segunda linha, a mesma restrição da primeira linha deve ser aplicada.
+
+Constraints
+
+.
+
+Output Format
+
+Imprimir a fila concatenada

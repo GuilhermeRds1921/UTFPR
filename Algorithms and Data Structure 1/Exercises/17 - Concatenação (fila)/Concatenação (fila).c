@@ -32,13 +32,13 @@ int inserir(Fila* fi, struct num X){
     return 0;
 }
 Fila* juntar(Fila* fi, Fila* f2){
-    int i, menor, maior, j=0;
+    int i, menor, maior, j = 0;
     Fila* conc;
     conc = criar();
-    for(i=0; i<fi->qtd; i++){
+    for(i = 0; i < fi->qtd; i++){
         inserir(conc, fi->dados[i]);
     }
-    for(i=0; i<f2->qtd; i++){
+    for(i = 0; i < f2->qtd; i++){
         inserir(conc, f2->dados[i]);
     }
     return conc;
@@ -47,21 +47,21 @@ void bolha(Fila* conc, int tam){
     int i, j;
     Fila *aux;
     aux= criar();
-    for(j=tam-1; j>0; j--){
+    for(j = tam-1; j > 0; j--){
         for(i=0; i<j;i++)
         {
-            if(conc->dados[i].n>conc->dados[i+1].n)
+            if(conc->dados[i].n > conc->dados[i+1].n)
             {
-                aux->dados[i]=conc->dados[i];
-                conc->dados[i]=conc->dados[i+1];
-                conc->dados[i+1]=aux->dados[i];
+                aux->dados[i] = conc->dados[i];
+                conc->dados[i] = conc->dados[i+1];
+                conc->dados[i+1] = aux->dados[i];
             }
         }
     }
 }
 void mostrar(Fila* conc){
     int i;
-    for(i=0; i<conc->qtd; i++){
+    for(i = 0; i < conc->qtd; i++){
         printf("%d ", conc->dados[i].n);
     }
 }
@@ -75,13 +75,13 @@ int main() {
 
     do{
         scanf("%d", &X.n);
-         if(X.n!=-1){
+         if(X.n != -1){
             inserir(fi, X);
         }
     }while(X.n != -1);
      do{
         scanf("%d", &X.n);
-        if(X.n!=-1){
+        if(X.n != -1){
             inserir(f2, X);
         }
     }while(X.n != -1);

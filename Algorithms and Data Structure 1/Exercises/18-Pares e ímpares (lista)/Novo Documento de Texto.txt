@@ -1,0 +1,15 @@
+Considerando a entrada de valores inteiros não negativos, ordene estes valores segundo o seguinte critério:
+
+Primeiro os Pares
+Depois os Ímpares
+Sendo que deverão ser apresentados os pares em ordem crescente e depois os ímpares em ordem decrescente.
+
+Utilize uma ou mais TAD lista na resolução do problema
+
+Input Format
+
+A primeira linha de entrada contém um único inteiro positivo N (1 < N < 10000) Este é o número de linhas de entrada que vem logo a seguir. As próximas N linhas conterão, cada uma delas, um valor inteiro não negativo.
+
+Output Format
+
+Apresente todos os valores lidos na entrada segundo a ordem apresentada acima. Cada número deve ser impresso em uma linha, conforme exemplo abaixo.

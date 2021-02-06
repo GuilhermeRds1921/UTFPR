@@ -34,17 +34,17 @@ int inserir(Lista* li, struct num X){
     return 0;
 }
 int retirar(Lista* li, int pos){
-     if(li==NULL||li->qtd == 0){
+     if(li == NULL || li->qtd == 0){
         return -1;
     }
-    int i=0, j=0;
-    while(i< li->qtd && li->dados[i].n != pos){
+    int i = 0, j = 0;
+    while(i < li->qtd && li->dados[i].n != pos){
         i++;
     };
-    if(i==0){
+    if(i == 0){
         return 0;
     }
-    for(j=i; j< li->qtd-1; j++){
+    for(j = i; j < li->qtd-1; j++){
         li->dados[j] = li->dados[j+1];
     }
     li->qtd--;
@@ -55,8 +55,8 @@ Lista* separarP(Lista* li){
     Lista *l2;
     l2 = criar();
     count = li->qtd;
-    for(i=0; i<li->qtd; i++){
-        if((li->dados[i].n)%2 ==0){
+    for(i = 0; i < li->qtd; i++){
+        if((li->dados[i].n) % 2 == 0){
             inserir(l2, li->dados[i]);
         }
     }
@@ -67,8 +67,8 @@ Lista* separarI(Lista* li){
     Lista *l2;
     l2 = criar();
     count = li->qtd;
-    for(i=0; i<li->qtd; i++){
-        if((li->dados[i].n)%2 !=0){
+    for(i = 0; i < li->qtd; i++){
+        if((li->dados[i].n) % 2 != 0){
             inserir(l2, li->dados[i]);
         }
     }
@@ -78,31 +78,31 @@ void bolha(Lista* li, int tam){
     int i, j;
     Lista *aux;
     aux = criar();
-    for(j=tam-1; j>0; j--){
-        for(i=0; i<j;i++)
+    for(j = tam-1; j > 0; j--){
+        for(i = 0; i < j;i++)
         {
-            if(li->dados[i].n>li->dados[i+1].n)
+            if(li->dados[i].n > li->dados[i+1].n)
             {
-                aux->dados[i]=li->dados[i];
-                li->dados[i]=li->dados[i+1];
-                li->dados[i+1]=aux->dados[i];
+                aux->dados[i] = li->dados[i];
+                li->dados[i] = li->dados[i+1];
+                li->dados[i+1] = aux->dados[i];
             }
         }
     }
 }
 Lista* juntar(Lista* li, Lista* l2, Lista* l3){
     int i, j;
-    for(i=0; i<l2->qtd; i++){
+    for(i = 0; i < l2->qtd; i++){
         inserir(li, l2->dados[i]);
     }
-    for(j=l3->qtd-1; j>=0; j--){
+    for(j = l3->qtd-1; j >= 0; j--){
         inserir(li, l3->dados[j]);
     }
     return li;
 }
 void mostrar(Lista* li){
     int i;
-    for(i=0; i<li->qtd; i++){
+    for(i = 0; i < li->qtd; i++){
         printf("%d\n", li->dados[i].n);
     }
 }
@@ -114,7 +114,7 @@ int main() {
     l2 = criar();
     l3 = criar();
     struct num X;
-    for(i=0; i<num; i++){
+    for(i = 0; i < num; i++){
         scanf("%d", &X.n);
         inserir(li, X);
     }
@@ -123,7 +123,7 @@ int main() {
     bolha(l3, l3->qtd);
     bolha(l2, l2->qtd);
     free(li);
-    li= criar();
+    li = criar();
     juntar(li, l2, l3);
 
     mostrar(li);

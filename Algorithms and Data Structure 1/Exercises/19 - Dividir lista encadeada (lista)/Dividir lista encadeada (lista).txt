@@ -1,6 +1,8 @@
-Implemente uma função que receba duas listas encadeadas, sendo uma com itens (l1) e a outra vazia (l2). A função deverá transferir a metade do conteúdo de l1 para l2.
+Implemente uma função que receba duas listas encadeadas, 
+sendo uma com itens (l1) e a outra vazia (l2). 
+A função deverá transferir a metade do conteúdo de l1 para l2.
 
-Input Format
+Input Format:
 
 Enquanto -1 não for lido, ler números inteiros.
 
@@ -8,6 +10,6 @@ Constraints
 
 .
 
-Output Format
+Output Format:
 
 Imprimir o conteúdo das duas listas.

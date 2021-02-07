@@ -29,9 +29,9 @@ Lista* criar(){
     return li;
 }
 void liberar(Lista* li){
-    if(li = !NULL){
+    if(li != NULL){
         Elem* no;
-        while((*li)!= NULL){
+        while((*li) != NULL){
             no = *li;
             *li = (*li)->prox;
             free(no);
@@ -52,26 +52,26 @@ int inserir(Lista* li, struct numeros X){
     return 1;
 }
 int tamanho(Lista* li, Lista* l2){
-    int c=0, i=0, p=0;
-    if(li == NULL|| *li ==NULL){
+    int c = 0, i = 0, p = 0;
+    if(li == NULL || *li == NULL){
         return 0;
     }
     Elem *no = *li;
-    while(no!= NULL){
+    while(no != NULL){
         c++;
         no = no->prox;
     }
     if(c>1){
-        if(c%2!=0){
+        if(c % 2 != 0){
             c++;
             p++;
         }
-        c = c/2;
+        c = c / 2;
         no = *li;
-        while(no!=NULL){
-            if(i<=c-1){
-                if(p>0){
-                    if(i<=c-2){
+        while(no != NULL){
+            if(i <= c - 1){
+                if(p > 0){
+                    if(i <= c - 2){
                         inserir(l2, no->dados);
                     }
 
@@ -86,9 +86,9 @@ int tamanho(Lista* li, Lista* l2){
         }
         i=0;
         no = *li;
-        while(no!=NULL){
+        while(no != NULL){
 
-                if(i>=c){
+                if(i >= c){
                 Elem* remov;
                 remov = *li;
                 *li = (*li)->prox;
@@ -104,19 +104,19 @@ int tamanho(Lista* li, Lista* l2){
 }
 void Mostrar(Lista* li, Lista* l2){
     Elem *no = *li;
-    int v[Max], i, c=0;
-    while(no!= NULL){
+    int v[Max], i, c = 0;
+    while(no != NULL){
         v[c] = no->dados.num;
         c++;
-        //printf("%d ", no->dados.num); //Não consegui inverter, mas o exercício só pede para separar a metade.
+        //printf("%d ", no->dados.num); //Nï¿½o consegui inverter, mas o exercï¿½cio sï¿½ pede para separar a metade.
         no = no->prox;
     }
-    for(i=c-1;i>=0; i--){
+    for(i = c-1; i >= 0; i--){
         printf("%d ", v[i]);
     }
     printf("\n");
     Elem *n2 = *l2;
-    while(n2!= NULL){
+    while(n2 != NULL){
         printf("%d ", n2->dados.num);
         n2 = n2->prox;
     }
@@ -127,7 +127,7 @@ int main() {
     Lista* l2 = criar();
     do{
         scanf("%d", &X.num);
-        if(X.num!=-1){
+        if(X.num != -1){
             inserir(li, X);
         }
     }while(X.num != -1);
@@ -135,5 +135,3 @@ int main() {
     Mostrar(li, l2);
     return 0;
 }
-
-

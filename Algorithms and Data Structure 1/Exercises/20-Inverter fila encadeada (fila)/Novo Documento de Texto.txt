@@ -1,0 +1,13 @@
+Implemente uma função receba uma fila encadeada. A função deverá iverter e imprimir o conteúdo da fila. Dica: pode ser utilizada uma pilha encadeada como auxiliar.
+
+Input Format
+
+Enquanto -1 não for lido, ler números inteiros.
+
+Constraints
+
+.
+
+Output Format
+
+Fila invertida impressa

@@ -27,6 +27,7 @@ Pilha* criar(){
     }
     return pi;
 }
+
 int inserir(Pilha* pi, struct num X){
     if(pi == NULL){
         return -1;
@@ -37,27 +38,24 @@ int inserir(Pilha* pi, struct num X){
     *pi = no;
     return 1;
 }
+
 int Binario(Pilha* pi, Pilha* bi){
     if(pi == NULL || bi == NULL){
         return -1;
     }
     struct num X;
 
-        X.n = ((*pi)->dados.n)%2;
+        X.n = ((*pi)->dados.n) % 2;
         inserir(bi, X);
 
-     while(((*pi)->dados.n)/2 >0){
-         (*pi)->dados.n = ((*pi)->dados.n)/2;
-         X.n = ((*pi)->dados.n)%2;
+     while(((*pi)->dados.n) / 2 > 0){
+         (*pi)->dados.n = ((*pi)->dados.n) / 2;
+         X.n = ((*pi)->dados.n) % 2;
          inserir(bi, X);
      }
-
-
-
-
-
     return 1;
 }
+
 void Mostrar(Pilha* bi){
     Elem* no = *bi;
     while(no != NULL){
@@ -65,6 +63,7 @@ void Mostrar(Pilha* bi){
         no = no->prox;
     }
 }
+
 int main() {
     struct num X;
     Pilha* pi = criar();
@@ -78,4 +77,3 @@ int main() {
 
     return 0;
 }
-

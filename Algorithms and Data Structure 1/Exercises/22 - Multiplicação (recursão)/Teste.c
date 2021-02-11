@@ -5,11 +5,11 @@
 
 int recursao(int n1, int n2){
     int r;
-    if(n2 == 0 || n1 == 0 ){
+    if(n2 == 0 || n1 == 0){
         return 0;
     }
     else {
-        r = n1 + recursao(n1, n2-1);
+        r = n1 + recursao(n1, n2 - 1);
     }
     return r;
 }

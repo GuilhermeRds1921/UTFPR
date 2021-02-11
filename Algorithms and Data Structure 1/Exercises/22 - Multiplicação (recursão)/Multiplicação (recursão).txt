@@ -1,10 +1,11 @@
-A multiplicação de dois números inteiros pode ser feita através de sucessivas somas, por exemplo, 5 ∗ 3 = 5 + 5 + 5 = 15. Implemente uma função que calcule o produto entre dois números utilizando recursão.
+A multiplicação de dois números inteiros pode ser feita através de sucessivas somas, por exemplo, 5 ∗ 3 = 5 + 5 + 5 = 15. 
+Implemente uma função que calcule o produto entre dois números utilizando recursão.
 
-Input Format
+Input Format:
 
 Na primeira linha devem ser lidos dois números inteiros positivos.
 
-Constraints
+Constraints:
 
 .
 

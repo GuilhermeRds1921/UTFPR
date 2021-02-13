@@ -3,14 +3,14 @@
 #include <math.h>
 #include <stdlib.h>
 int recursao(int n1, int n2){
-    if(n1==n2){
+    if(n1 == n2){
         return n1;
     }
-    if(n1<n2){
+    if(n1 < n2){
         return recursao(n2, n1);
     }
     else{
-        return recursao(n1-n2, n2);
+        return recursao(n1 - n2, n2);
     }
 }
 int main() {

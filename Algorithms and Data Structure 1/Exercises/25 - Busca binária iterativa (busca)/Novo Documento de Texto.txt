@@ -1,13 +1,15 @@
 Implemente a versão iterativa da busca binária.
 
-Input Format
+Input Format:
 
-Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor. Na terceira linha deve ser lido o número de casos de teste (quantidade de chaves que deverão ser procuradas). A partir da próxima linha, as chaves que serão procuradas devem ser lidas.
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor. 
+Na terceira linha deve ser lido o número de casos de teste (quantidade de chaves que deverão ser procuradas). 
+A partir da próxima linha, as chaves que serão procuradas devem ser lidas.
 
-Constraints
+Constraints:
 
 .
 
-Output Format
+Output Format:
 
-Para cada chave procurada (caso de teste) deve ser impressa a posição no vetor ou -1 (se não for encontrada)
+Para cada chave procurada (caso de teste) deve ser impressa a posição no vetor ou -1 (se não for encontrada).

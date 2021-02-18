@@ -1,0 +1,13 @@
+Implemente o método de recuperação recorrente transposição, no qual, cada vez que um registro é recuperado com sucesso, ele tem a posição trocada com o registro imediatamente anterior. Por exemplo, suponha que procuramos a chave 2 no seguinte vetor: {7, 3, 4, 2, 6}. Após recuperar a chave 2, a mesma tem a posição trocada com a chave 3: {7, 3, 2, 4, 6}.
+
+Input Format
+
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor. Na terceira linha deve ser lido o número de casos de teste (quantidade de chaves que deverão ser procuradas). A partir da próxima linha, as chaves que serão procuradas devem ser lidas.
+
+Constraints
+
+.
+
+Output Format
+
+Após execução do algoritmo para cada caso teste, imprimir o vetor.

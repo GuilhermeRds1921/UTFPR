@@ -1,0 +1,13 @@
+Implemente um dos algoritmos de ordenação simples apresentados em sala de aula (bublesort, selection sort ou insertion sort)
+
+Input Format
+
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor.
+
+Constraints
+
+.
+
+Output Format
+
+Imprimir o vetor ordenado.

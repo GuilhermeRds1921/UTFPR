@@ -4,25 +4,25 @@
 #include <stdlib.h>
 void Receber(int *V, int tam){
     int i;
-    for(i=0; i<tam; i++){
+    for(i = 0; i < tam; i++){
         scanf("%d", &V[i]);
     }
 }
 void Bubble(int *V, int tam){
     int aux, i, j;
-    for(j=tam-1; j>0; j--){
-        for(i=0; i<j;i++){
-            if(V[i]>V[i+1]) {
-                aux=V[i];
-                V[i]=V[i+1];
-                V[i+1]=aux;
+    for(j = tam-1; j > 0; j--){
+        for(i = 0; i < j; i++){
+            if(V[i] > V[i+1]) {
+                aux = V[i];
+                V[i] = V[i+1];
+                V[i+1] = aux;
             }
         }
     }
 }
 void Mostrar(int *V, int tam){
     int i;
-    for(i=0; i<tam; i++){
+    for(i = 0; i < tam; i++){
         printf("%d ", V[i]);
     }
 }

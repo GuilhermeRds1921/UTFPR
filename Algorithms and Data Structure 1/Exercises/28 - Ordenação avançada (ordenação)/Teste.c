@@ -4,21 +4,21 @@
 #include <stdlib.h>
 void Receber(int *V, int tam){
     int i;
-    for(i=0; i<tam; i++){
+    for(i = 0; i < tam; i++){
         scanf("%d", &V[i]);
     }
 }
 void ShellSort(int *V, int tam) {
     int i, j, key, h = 1;
     while(h < tam){
-        h = 3*h+1;
+        h = 3 * h + 1;
     }
     while (h  > 0) {
-        for(i=h; i<tam; i++){
-            key= V[i];
-            j= i;
+        for(i = h; i < tam; i++){
+            key = V[i];
+            j = i;
             while (j > h-1 && key <= V[j-h]){
-                V[j]= V[j-h];
+                V[j] = V[j-h];
                 j = j-h;
             }
             V[j] = key;
@@ -28,7 +28,7 @@ void ShellSort(int *V, int tam) {
 }
 void Mostrar(int *V, int tam){
     int i;
-    for(i=0; i<tam; i++){
+    for(i = 0; i < tam; i++){
         printf("%d ", V[i]);
     }
 }

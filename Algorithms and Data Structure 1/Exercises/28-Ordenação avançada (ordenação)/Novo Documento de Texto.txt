@@ -1,0 +1,14 @@
+Implemente um dos algoritmos de ordenação avançados apresentados em sala de aula (wuichsort, shellsort ou heaport)
+
+Input Format
+
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor.
+
+Constraints
+
+.
+
+Output Format
+
+Imprimir o vetor ordenado.
+

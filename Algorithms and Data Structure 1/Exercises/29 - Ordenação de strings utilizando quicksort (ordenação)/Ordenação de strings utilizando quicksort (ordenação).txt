@@ -1,13 +1,14 @@
 Implemente o algoritmo quicksort para ordenar vetor de strings.
 
-Input Format
+Input Format:
 
-Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, ler as strings do vetor.
+Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, 
+ler as strings do vetor.
 
-Constraints
+Constraints:
 
 .
 
-Output Format
+Output Format:
 
 Imprimir o vetor após a ordenação.

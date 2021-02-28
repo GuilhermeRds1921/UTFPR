@@ -43,13 +43,13 @@ int main() {
     int i, n;
     scanf("%d", &n);
     char* Nome[n];
-     for(i=0; i<n; i++){
+     for(i = 0; i < n; i++){
             Nome[i] = malloc(sizeof(char*));
          scanf("%s", Nome[i]);
      }
     quicksort(Nome, 0, n);
 
-    for(i=1; i<n+1; i++){
+    for(i = 1; i < n+1; i++){
         printf("%s \n", Nome[i]);
     }
     return 0;

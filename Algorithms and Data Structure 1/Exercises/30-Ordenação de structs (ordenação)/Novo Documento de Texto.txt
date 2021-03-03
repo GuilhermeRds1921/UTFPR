@@ -1,0 +1,21 @@
+Adapte um dos algorimos de ordenação para o vetor de elementos da seguinte estrutura:
+
+typedef struct{
+    int matricula;
+    char* nome;
+    char* curso;
+    float coef;
+}Aluno;
+A ordenação deve ser por nome. Caso haja registros com o mesmo nome, o critério de ordenação nesse caso é a matrícula.
+
+Input Format
+
+Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, ler os dados de cada elemento do vetor.
+
+Constraints
+
+.
+
+Output Format
+
+Imprimir os registro ordenados. Diferentemente da forma leitura, cada registro deve ser impresso em uma linha.

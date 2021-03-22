@@ -1,16 +1,18 @@
-mplemente uma função que converta uma matriz de números em uma matriz esparsa.
+Implemente uma função que converta uma matriz de números em uma matriz esparsa.
 
-Input Format
+Input Format:
 
-A primeira linha contém os números de linhas e de colunas. Em seguida, uma matriz deve ser lida.
+A primeira linha contém os números de linhas e de colunas. Em seguida, uma matriz 
+deve ser lida.
 
-Constraints
+Constraints:
 
 .
 
-Output Format
+Output Format:
 
-Matriz esparsa impressa no seguinte formato: "linha_i: -> coluna_j,item -> coluna_k,item"
+Matriz esparsa impressa no seguinte formato: 
+"linha_i: -> coluna_j,item -> coluna_k,item"
 
 Caso a i-ésima linha da matriz esparsa seja nula, basta imprimir "linha_i -> ".
 

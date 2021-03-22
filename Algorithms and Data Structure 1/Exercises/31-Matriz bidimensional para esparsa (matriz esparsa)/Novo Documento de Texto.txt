@@ -1,0 +1,19 @@
+mplemente uma função que converta uma matriz de números em uma matriz esparsa.
+
+Input Format
+
+A primeira linha contém os números de linhas e de colunas. Em seguida, uma matriz deve ser lida.
+
+Constraints
+
+.
+
+Output Format
+
+Matriz esparsa impressa no seguinte formato: "linha_i: -> coluna_j,item -> coluna_k,item"
+
+Caso a i-ésima linha da matriz esparsa seja nula, basta imprimir "linha_i -> ".
+
+Exemplo de matriz 3x3 e sua respectiva representação esparsa: 1 0 2 0 0 0 3 3 3
+
+0: -> 0,1 -> 2,2 1: -> 2: -> 0,3 -> 1,3 -> 2,3

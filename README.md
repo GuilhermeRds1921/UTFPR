@@ -9,7 +9,6 @@
    1. Functions.
    1. Arrays.
    1. Matrix.
-   1. Bubble Sort.
 1. **Algorithms and Data Structure 1:**
    1. Pointers.
    1. Structs.

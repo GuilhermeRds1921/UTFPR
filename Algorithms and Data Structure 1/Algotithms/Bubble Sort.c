@@ -1,8 +1,8 @@
 #include <stdio.h>
 void Bolha(int *V, int N){
     int i, j, aux;
-    for(i=N-1; i>0; i--){
-        for(j=0; j<i; j++){
+    for(i = N-1; i>0; i--){
+        for(j = 0; j<i; j++){
             if(V[j] > V[j+1]){
                 aux = V[j];
                 V[j] = V[j+1];

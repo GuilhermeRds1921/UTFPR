@@ -1,0 +1,15 @@
+Implemente uma função que verifica se a matriz esparsa é diagonal.
+
+"Matriz diagonal é uma matriz quadrada onde os elementos que não pertencem à diagonal principal são obrigatoriamente iguais a zero." Fonte:
+
+Input Format
+
+Na primeira linha deve ser lido um número inteiro, que representará os números de linhas e de colunas (matriz quadrada). Em seguida, uma matriz deve ser lida. Por último, a matriz bidimensional deve ser convertida para uma matriz esparsa.
+
+Constraints
+
+.
+
+Output Format
+
+Deve ser impresso "diagonal" se a matriz for diagonal ou "nao diagonal", caso contrário.

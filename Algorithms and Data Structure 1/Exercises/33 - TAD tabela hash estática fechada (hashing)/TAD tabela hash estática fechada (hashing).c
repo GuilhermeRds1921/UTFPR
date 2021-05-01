@@ -29,7 +29,7 @@ Hash* criar(int n, float c){
         return NULL;
     }
     hs->qtd = 0;
-    for(i=0; i<hs->n; i++){
+    for(i = 0; i < hs->n; i++){
         hs->key[i] = NULL;
     }
     return hs;
@@ -41,7 +41,7 @@ int FuncHash(float c, int n, int elem){
     return (int) (n * valor);
 }
 int ReHash(int h1, int elem, int i, int n){
-    int h2 = 1 + elem%(n - 1);
+    int h2 = 1 + elem % (n - 1);
     return (((h1 + i * h2)) % n);
 }
 int inserir(Hash* hs, struct chave X){
@@ -51,13 +51,13 @@ int inserir(Hash* hs, struct chave X){
     int i, h1, h2;
     h1 = FuncHash(hs->c, hs->n, X.num);
 
-    for(i=0; i<hs->n; i++){
+    for(i = 0; i < hs->n; i++){
         h2 = ReHash(h1, X.num, i, hs->n);
         if(hs->key[h2] == NULL){
             struct chave* new;
             new = (struct chave*)
                 malloc(sizeof(struct chave));
-            if(new ==NULL){
+            if(new == NULL){
                 return 0;
             }
             *new = X;
@@ -80,7 +80,7 @@ int main() {
     Hash* hs = criar(n, c);
     struct chave X;
 
-    for(i=0; i<quant; i++){
+    for(i = 0; i < quant; i++){
         scanf("%d", &X.num);
         inserir(hs, X);
     }

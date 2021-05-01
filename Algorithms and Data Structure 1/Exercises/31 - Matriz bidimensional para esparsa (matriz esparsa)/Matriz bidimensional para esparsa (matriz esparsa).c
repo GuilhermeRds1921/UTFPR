@@ -28,7 +28,7 @@ MATRIZ* criar(int linha, int coluna){
     esparsa->coluna = coluna;
     esparsa->prox = (Lista*)malloc(linha * sizeof(Lista));
 
-    for(i=0; i<linha; i++){
+    for(i = 0; i < linha; i++){
         esparsa->prox[i] = NULL;
     }
     return esparsa;
@@ -40,7 +40,7 @@ int converter(MATRIZ* esparsa, int Valor, int linha, int coluna){
         antes = atual;
         atual = atual->prox;
     }
-    if(atual!=NULL && atual->coluna == coluna){
+    if(atual != NULL && atual->coluna == coluna){
         atual->valor = Valor;
     }
     else{
@@ -61,13 +61,13 @@ int converter(MATRIZ* esparsa, int Valor, int linha, int coluna){
 }
 void mostrar(MATRIZ* esparsa, int linha, int coluna, int count){
     Lista atual = esparsa->prox[linha];
-    while(atual !=NULL &&atual->coluna < coluna){
+    while(atual != NULL &&atual->coluna < coluna){
         atual = atual->prox;
     }
-    if(esparsa->prox[linha] == NULL && count ==0){
+    if(esparsa->prox[linha] == NULL && count == 0){
         printf("->");
     }
-    if(atual !=NULL && atual->coluna ==coluna){
+    if(atual != NULL && atual->coluna == coluna){
         printf("-> %d,%d ", atual->coluna, atual->valor);
     }
 }
@@ -77,27 +77,27 @@ int main() {
     scanf("%d", &coluna);
 
     int matriz[linha][coluna];
-    for(i=0; i<linha; i++){
-        for(j=0; j<coluna; j++){
+    for(i = 0; i < linha; i++){
+        for(j = 0; j < coluna; j++){
             scanf("%d", &matriz[i][j]);
         }
     }
 
     MATRIZ* esparsa = criar (linha, coluna);
 
-    for(i=0; i<linha; i++){
-        for(j=0; j<coluna; j++){
-            if(matriz[i][j]!=0){
+    for(i = 0; i < linha; i++){
+        for(j = 0; j < coluna; j++){
+            if(matriz[i][j] != 0){
                  converter(esparsa, matriz[i][j], i, j);
 
             }
         }
     }
 
-    for(i=0; i<linha; i++){
+    for(i = 0; i < linha; i++){
         printf("%d: ", i);
-        int count =0;
-        for(j=0; j<coluna; j++){
+        int count = 0;
+        for(j = 0; j < coluna; j++){
            mostrar(esparsa, i, j, count);
             count++;
         }

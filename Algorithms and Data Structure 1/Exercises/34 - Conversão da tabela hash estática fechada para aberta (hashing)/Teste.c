@@ -30,18 +30,18 @@ Hash* criar(int n){
         return NULL;
     }
     hs->qtd = 0;
-    for(i=0; i<hs->n; i++){
+    for(i = 0; i < hs->n; i++){
         hs->key[i] = NULL;
     }
     return hs;
 }
 int ReHash(int pos, int i, int n){
-    return ((pos + i) %n);
+    return ((pos + i) % n);
 }
 int HashF(int n, int elem){
     int pos;
-    if(elem<0){
-        elem*=-1;
+    if(elem < 0){
+        elem *= -1;
     }
     pos = elem % n;
     return pos;
@@ -53,13 +53,13 @@ int inserir(Hash* hs, struct chave X){
     int i, h1, h2;
     h1 = HashF(hs->n, X.num);
 
-    for(i=0; i<hs->n; i++){
+    for(i = 0; i < hs->n; i++){
         h2 = ReHash(h1, i, hs->n);
         if(hs->key[h2] == NULL){
             struct chave* new;
             new = (struct chave*)
                 malloc(sizeof(struct chave));
-            if(new ==NULL){
+            if(new == NULL){
                 return 0;
             }
             *new = X;
@@ -96,7 +96,7 @@ int inserirLista(Lista* li, struct chave Z){
     no->dados = Z;
     no->prox = NULL;
     if((*li)==NULL){
-        *li= no;
+        *li = no;
     }
     else{
         Elem *aux = *li;
@@ -121,20 +121,20 @@ int inserirAberto(Lista* tabela[], struct chave Y, Hash* hs){
 int converter(Lista* tabela[],Hash* hs){
     int i;
     struct chave Y;
-    for(i=0; i<hs->n; i++){
-        if(hs->key[i]!=NULL){
+    for(i = 0; i < hs->n; i++){
+        if(hs->key[i] != NULL){
              Y.num = (hs->key[i]->num);
              inserirAberto(tabela, Y, hs);
         }
 
     }
-    for(i=0; i<hs->n; i++){
+    for(i = 0; i < hs->n; i++){
         printf("%d: ->", i);
         Elem* no2 = *(tabela[i]);
-        while(no2!=NULL){
+        while(no2 != NULL){
             printf(" %d ", no2->dados.num);
             no2 = no2->prox;
-            if(no2 !=NULL){
+            if(no2 != NULL){
                 printf("->");
             }
         }
@@ -146,22 +146,22 @@ int main() {
     int n, quant, i;
     scanf("%d", &n);
     scanf("%d", &quant);
-    if(n<0){
-        n*=-1;
+    if(n < 0){
+        n *= -1;
     }
-    if(quant<0){
-        quant*=-1;
+    if(quant < 0){
+        quant *= -1;
     }
     Hash* hs = criar(n);
     struct chave X;
 
-    for(i=0; i<quant; i++){
+    for(i = 0; i < quant; i++){
         scanf("%d", &X.num);
         inserir(hs, X);
     }
     Lista* tabela[n];
-    for(i=0; i<n; i++){
-        tabela[i]= criarLista();
+    for(i = 0; i < n; i++){
+        tabela[i] = criarLista();
     }
     converter(tabela, hs);
     return 0;

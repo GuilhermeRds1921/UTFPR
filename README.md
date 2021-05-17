@@ -1,5 +1,5 @@
 # UTFPR - Universidade Tecnológica Federal do Paraná.
-### For now I am in the second period and had the subjects of Algorithms and Data Structure 1, Fundamentals of Programming:
+### For now I am in the third period and had the subjects of Fundamentals of Programming, Algorithms and Data Structure 1, Algorithms and Data Structure 2:
 *We use the C programming language.*
 
 1. **Fundamentals of Programming:**

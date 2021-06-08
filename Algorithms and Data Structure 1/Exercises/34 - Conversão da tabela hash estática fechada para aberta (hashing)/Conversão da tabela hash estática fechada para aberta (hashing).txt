@@ -1,5 +1,9 @@
 O Sr. Urameshi implementou alguns anos atrás, uma tabela hash estática fechada, na qual, para a alocação de chaves 
-é utilizada a função h(k) = k % B e para o tratamento de colisões é usado o overflow progressivo (sondagem linear). No entanto, Urameshi não previu que um dia a tabela poderia ficar cheia. Sendo assim, ajude o Dr. Uramesh a migrar essa tabela para uma tabela hash estática aberta com a mesma quantidade de buckets, mas com tratamento de colisões por listas encadeadas. Para isso, implemente uma função que receba uma tabela hash estática fechada. Essa função converter a entrada em uma tabela estática aberta.
+é utilizada a função h(k) = k % B e para o tratamento de colisões é usado o overflow progressivo (sondagem linear). 
+No entanto, Urameshi não previu que um dia a tabela poderia ficar cheia. Sendo assim, ajude o 
+Dr. Uramesh a migrar essa tabela para uma tabela hash estática aberta com a mesma quantidade de buckets, 
+mas com tratamento de colisões por listas encadeadas. Para isso, implemente uma função que receba 
+uma tabela hash estática fechada. Essa função converter a entrada em uma tabela estática aberta.
 
 Input Format:
 
